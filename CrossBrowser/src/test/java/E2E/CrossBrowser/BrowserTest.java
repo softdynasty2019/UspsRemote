@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BrowserTest {
 
@@ -18,9 +18,9 @@ public class BrowserTest {
 	public void setup() throws MalformedURLException {
 		String URL = "https://setubabu25:ca19145a-3f90-49de-aa19-a3f9397af499@ondemand.us-west-1.saucelabs.com:443/wd/hub";
 
-		DesiredCapabilities cap = new DesiredCapabilities().safari();
+		DesiredCapabilities cap = new DesiredCapabilities().chrome();
 
-		cap.setCapability("platform", "macOS 10.12");
+		cap.setCapability("platform", "Windows 10");
 		cap.setCapability("version", "latest");
 
 		WebDriver driver = new RemoteWebDriver(new URL(URL), cap);
