@@ -29,6 +29,7 @@ public class BrowserTest {
 		driver.manage().window().maximize();
 		System.out.println("USPS Login Successfully");
 		System.out.println(driver.getTitle());
+		System.out.println(" Login Successfully");
 
 		
 		
